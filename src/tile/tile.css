@@ -1,0 +1,55 @@
+.tile {
+  width: 32.1rem;
+  margin-right: 2.1rem; /* Add consistent spacing between tiles */
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  outline: none;
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+#tile-image {
+  border-radius: 0.9rem;
+  display: block;
+  height: 18rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.9rem;
+  object-fit: cover;
+  width: 32.1rem;
+}
+
+#tile-meta {
+  color: #ccc;
+  font-size: 0.9rem;
+  opacity: 0;
+}
+
+#tile-title {
+  color: #282828;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 32.1rem;
+}
+
+.tile:focus #tile-image {
+  box-shadow: 0 0 0 0.3rem white;
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.tile:focus #tile-meta {
+  opacity: 1; /* Make it visible */
+}
+
+.tile:focus #tile-title {
+  color: white;
+}

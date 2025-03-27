@@ -1,0 +1,14 @@
+html {
+  font-size: 10px; /* 1rem = 10px */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+body {
+  background-color: black;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 9.9rem;
+}

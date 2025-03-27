@@ -1,0 +1,70 @@
+.modal {
+  background-color: #1a1a1a;
+  border-radius: 1.2rem;
+  box-shadow: -0.3rem 0 0.6rem rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  right: -100%; /* Start off-screen */
+  top: 0;
+  transition: right 0.3s ease;
+  width: 30%;
+  z-index: 1000;
+}
+
+.modal-content {
+  margin: 0rem 3rem;
+}
+
+#modal-description {
+  display: -webkit-box;
+  font-size: 1.2rem;
+  line-clamp: 3;
+  margin-bottom: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+#modal-image {
+  border-radius: 0.6rem;
+  display: block;
+  margin: 0.9rem auto;
+  width: 80%;
+}
+
+#modal-meta {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+#modal-title {
+  font-size: 2.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.modal-button-container {
+  margin-top: 2.4rem;
+}
+
+button {
+  background: none;
+  border: 0.3rem solid #282828;
+  border-radius: 0.9rem;
+  color: white;
+  font-size: 2.1rem;
+  margin-right: 1.5rem;
+  outline: none;
+  padding: 0.6rem 0.9rem;
+}
+
+button:focus {
+  border-color: white;
+}
+
+/* Show the modal when active */
+.modal.active {
+  right: 0;
+}
