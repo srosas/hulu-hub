@@ -38,12 +38,17 @@ Hulu Hub is a web application that mimics the browsing experience of Hulu.
 ## Usage
 
 1. Install dependencies
+   ```bash 
    npm install
+   ```
 
 2. Start the development server
+   ```bash 
    npm run start
-
+   ```
 3. Navigation
+   ```bash 
    Navigate the tiles, rows, and modal with the arrow keys,
    Use the 'Enter' key to select a tile and open the modal
    Use the 'Backspace' key to remove the modal
+   ```
